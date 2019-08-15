@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+        body{margin:0;padding:0;}
+        h1{background-color:#33aaff;width:100%;}
+
+        #input_div{margin:0;padding:0;float:left;width:40%;}
+        #input_text{width:100%;min-height:400px;}
+        #output_div{margin:0;padding:0;float:left;width:60%;}
+        #output_text{width:100%;min-height:400px;}
+        </style>
+    </head>
+    <body>
+        <h1>Pick varname</h1>
+        <div id="front_sec">
+        <button onclick="pick_varname()">PickVarName</button>
+        </div>
+        <div id="input_div">
+            <h2>input</h2>
+            <textarea id="input_text">
+よくある例
+車両モード mode_car に前進モード MODE_GO_AHEAD を代入する。
+            </textarea>
+        </div>
+
+        <div id="output_div">
+            <h2>output</h2>
+            <textarea id="output_text">output</textarea>
+        </div>
+    </body>
+    <script>
+        function pick_varname(){
+            var input_text = document.getElementById("input_text").value;
+            var output = document.getElementById("output_text");
+            var var_names = [];
+
+            //pick var names
+
+
+            //output var names
+            output.value = input_text;
+        }
+    </script>
+</html>
