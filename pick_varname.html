@@ -35,10 +35,14 @@
             var var_names = [];
 
             //pick var names
-
+            var pattern = /[a-z_]+/gi;
+            var_names = input_text.match(pattern);
 
             //output var names
-            output.value = input_text;
+            output.value = "";
+            var_names.forEach(element => {
+                output.value += element +"\n";
+            });
         }
     </script>
 </html>
